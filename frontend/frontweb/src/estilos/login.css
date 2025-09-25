@@ -1,0 +1,129 @@
+.form-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 5px; /* Espacio entre el título y el subtítulo */
+}
+
+.form-subtitle {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 30px; /* Espacio entre el subtítulo y los campos */
+}
+
+/*---Codigo para el Estilo del login---*/
+.logo {
+  width: 160%;
+  height: 160%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* El "cuadrado" de cristal esmerilado */
+.login-form {
+  background: rgba(53, 111, 219, 0.975);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 0 6px 6px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  /* REEMPLAZADO: Eliminamos la altura y el ancho fijos */
+  width: 90%; /* Ahora es un 90% del ancho del contenedor */
+  max-width: 800px; /* Ancho máximo para pantallas grandes */
+  height: auto; /* La altura se ajusta al contenido */
+}
+
+/* Estilo del logo */
+.logo-placeholder {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: rgba(254, 254, 255, 0.6); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+  /*border: 2px solid rgba(0, 0, 0, 0.4);*/ 
+}
+
+
+/* Estilos de los campos de entrada */
+.input-group {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 100%; /* Ahora usa el 100% del ancho del .input-group */
+  padding: 12px 12px 12px 45px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid #515cff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.login-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.login-input:focus {
+  border-bottom: 2px solid #fff;
+}
+
+/* Estilo del botón "LOGIN" */
+.login-button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(to right, #212cf4, #515cff);
+  color: #fcfcff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  /*box-shadow: 0 4px 10px rgba(78, 107, 250, 0.208);*/
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease; 
+}
+
+.login-button:hover {
+  background: linear-gradient(to right, #515cff, #212cf4);
+}
+
+.input-group {
+  display: flex; 
+  flex-direction: column; 
+  margin-bottom: 20px; 
+}
+
+.usuariocss,
+.contraseñacss {
+  color: white;
+  margin-bottom: 5px;
+}
+/* Efecto al pasar el cursor */
+.login-button:hover,
+.input-group input:focus {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.input-group input {
+  background-color: #ffffff79; 
+  border: none;
+  border-radius: 8px;
+  border-color: #515cff;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}

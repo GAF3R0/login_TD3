@@ -1,0 +1,47 @@
+/* Asegura que el contenedor principal ocupe toda la pantalla */
+#root {
+  min-height: 100vh; /* Usa min-height para que se adapte al tamaño de la pantalla */
+  width: 100%;
+  margin: 0; /* Elimina el margen automático y el relleno */
+  padding: 0;
+  text-align: center;
+  display: flex; /* Añadimos Flexbox para un control más preciso */
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* El logo ahora es completamente responsivo */
+.logo {
+  width: 90%; /* Ancho basado en el contenedor padre */
+  height: auto; /* La altura se ajusta automáticamente */
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #54589faa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #ffffff;
+}
