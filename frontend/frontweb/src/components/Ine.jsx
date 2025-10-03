@@ -326,15 +326,15 @@ const styles = {
     border: '1px solid #ddd',
     padding: '8px',
     textAlign: 'left',
-    backgroundColor: '#f2f2f2',
+    backgroundColor: '#066910ff',
   },
   td: {
-    border: '1px solid #ddd',
+    border: '1px solid #066910ff',
     padding: '8px',
     textAlign: 'left',
   },
   tdActions: {
-    border: '1px solid #ddd',
+    border: '1px solid #066910ff',
     padding: '8px',
     textAlign: 'center',
     whiteSpace: 'nowrap', 
